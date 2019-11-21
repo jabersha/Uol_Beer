@@ -1,0 +1,6 @@
+framework module Pods_Uol_Beer {
+  umbrella header "Pods-Uol Beer-umbrella.h"
+
+  export *
+  module * { export * }
+}

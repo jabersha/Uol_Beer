@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15C14E832385ACE8007286BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C14E822385ACE8007286BA /* AppDelegate.swift */; };
+		15C14E852385ACE8007286BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C14E842385ACE8007286BA /* ViewController.swift */; };
+		15C14E882385ACE8007286BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C14E862385ACE8007286BA /* Main.storyboard */; };
+		15C14E8B2385ACE8007286BA /* Uol_Beer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15C14E892385ACE8007286BA /* Uol_Beer.xcdatamodeld */; };
+		15C14E8D2385ACEF007286BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C14E8C2385ACEF007286BA /* Assets.xcassets */; };
+		15C14E902385ACEF007286BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C14E8E2385ACEF007286BA /* LaunchScreen.storyboard */; };
+		15C14E982385AE16007286BA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C14E972385AE16007286BA /* Alamofire.framework */; };
+		15C14E9D2385B925007286BA /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C14E9C2385B925007286BA /* BeerCell.swift */; };
+		15C14E9F2385BBE6007286BA /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C14E9E2385BBE6007286BA /* Beer.swift */; };
+		15C14EA1238645CD007286BA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C14EA0238645CD007286BA /* SecondViewController.swift */; };
+		BFF1BC8C4D034258D626BA23 /* Pods_Uol_Beer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8C2E6C9A75A3E554773D08 /* Pods_Uol_Beer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15C14E7F2385ACE8007286BA /* Uol Beer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uol Beer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15C14E822385ACE8007286BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15C14E842385ACE8007286BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15C14E872385ACE8007286BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15C14E8A2385ACE8007286BA /* Uol_Beer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Uol_Beer.xcdatamodel; sourceTree = "<group>"; };
+		15C14E8C2385ACEF007286BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15C14E8F2385ACEF007286BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15C14E912385ACEF007286BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C14E972385AE16007286BA /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15C14E9C2385B925007286BA /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
+		15C14E9E2385BBE6007286BA /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		15C14EA0238645CD007286BA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		26E2A9B79970212C9619B1BA /* Pods-Uol Beer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uol Beer.release.xcconfig"; path = "Target Support Files/Pods-Uol Beer/Pods-Uol Beer.release.xcconfig"; sourceTree = "<group>"; };
+		6A8C2E6C9A75A3E554773D08 /* Pods_Uol_Beer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uol_Beer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF72D69F64A6B7202CE018A9 /* Pods-Uol Beer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uol Beer.debug.xcconfig"; path = "Target Support Files/Pods-Uol Beer/Pods-Uol Beer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15C14E7C2385ACE8007286BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C14E982385AE16007286BA /* Alamofire.framework in Frameworks */,
+				BFF1BC8C4D034258D626BA23 /* Pods_Uol_Beer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15C14E762385ACE8007286BA = {
+			isa = PBXGroup;
+			children = (
+				15C14E812385ACE8007286BA /* Uol Beer */,
+				15C14E802385ACE8007286BA /* Products */,
+				A6D5C23AC447F3EF5C03B218 /* Pods */,
+				955A57155992E0BAC60EBF2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15C14E802385ACE8007286BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15C14E7F2385ACE8007286BA /* Uol Beer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15C14E812385ACE8007286BA /* Uol Beer */ = {
+			isa = PBXGroup;
+			children = (
+				15C14E822385ACE8007286BA /* AppDelegate.swift */,
+				15C14E842385ACE8007286BA /* ViewController.swift */,
+				15C14E862385ACE8007286BA /* Main.storyboard */,
+				15C14E8C2385ACEF007286BA /* Assets.xcassets */,
+				15C14E8E2385ACEF007286BA /* LaunchScreen.storyboard */,
+				15C14E912385ACEF007286BA /* Info.plist */,
+				15C14E892385ACE8007286BA /* Uol_Beer.xcdatamodeld */,
+				15C14E9C2385B925007286BA /* BeerCell.swift */,
+				15C14E9E2385BBE6007286BA /* Beer.swift */,
+				15C14EA0238645CD007286BA /* SecondViewController.swift */,
+			);
+			path = "Uol Beer";
+			sourceTree = "<group>";
+		};
+		955A57155992E0BAC60EBF2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15C14E972385AE16007286BA /* Alamofire.framework */,
+				6A8C2E6C9A75A3E554773D08 /* Pods_Uol_Beer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6D5C23AC447F3EF5C03B218 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF72D69F64A6B7202CE018A9 /* Pods-Uol Beer.debug.xcconfig */,
+				26E2A9B79970212C9619B1BA /* Pods-Uol Beer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15C14E7E2385ACE8007286BA /* Uol Beer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15C14E942385ACEF007286BA /* Build configuration list for PBXNativeTarget "Uol Beer" */;
+			buildPhases = (
+				527221AA3FF5FFEFB1AAA5EB /* [CP] Check Pods Manifest.lock */,
+				15C14E7B2385ACE8007286BA /* Sources */,
+				15C14E7C2385ACE8007286BA /* Frameworks */,
+				15C14E7D2385ACE8007286BA /* Resources */,
+				15DC58383D33AC68EE3258D8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Uol Beer";
+			productName = "Uol Beer";
+			productReference = 15C14E7F2385ACE8007286BA /* Uol Beer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15C14E772385ACE8007286BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jaber Vieira Da Silva Shamali";
+				TargetAttributes = {
+					15C14E7E2385ACE8007286BA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 15C14E7A2385ACE8007286BA /* Build configuration list for PBXProject "Uol Beer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15C14E762385ACE8007286BA;
+			productRefGroup = 15C14E802385ACE8007286BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15C14E7E2385ACE8007286BA /* Uol Beer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15C14E7D2385ACE8007286BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C14E902385ACEF007286BA /* LaunchScreen.storyboard in Resources */,
+				15C14E8D2385ACEF007286BA /* Assets.xcassets in Resources */,
+				15C14E882385ACE8007286BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15DC58383D33AC68EE3258D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uol Beer/Pods-Uol Beer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uol Beer/Pods-Uol Beer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		527221AA3FF5FFEFB1AAA5EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Uol Beer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15C14E7B2385ACE8007286BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C14EA1238645CD007286BA /* SecondViewController.swift in Sources */,
+				15C14E8B2385ACE8007286BA /* Uol_Beer.xcdatamodeld in Sources */,
+				15C14E852385ACE8007286BA /* ViewController.swift in Sources */,
+				15C14E9F2385BBE6007286BA /* Beer.swift in Sources */,
+				15C14E832385ACE8007286BA /* AppDelegate.swift in Sources */,
+				15C14E9D2385B925007286BA /* BeerCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		15C14E862385ACE8007286BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15C14E872385ACE8007286BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15C14E8E2385ACEF007286BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15C14E8F2385ACEF007286BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15C14E922385ACEF007286BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15C14E932385ACEF007286BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15C14E952385ACEF007286BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF72D69F64A6B7202CE018A9 /* Pods-Uol Beer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XP5B9BHL33;
+				INFOPLIST_FILE = "Uol Beer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.jabinho.Uol-Beer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15C14E962385ACEF007286BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26E2A9B79970212C9619B1BA /* Pods-Uol Beer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XP5B9BHL33;
+				INFOPLIST_FILE = "Uol Beer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.jabinho.Uol-Beer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15C14E7A2385ACE8007286BA /* Build configuration list for PBXProject "Uol Beer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C14E922385ACEF007286BA /* Debug */,
+				15C14E932385ACEF007286BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15C14E942385ACEF007286BA /* Build configuration list for PBXNativeTarget "Uol Beer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C14E952385ACEF007286BA /* Debug */,
+				15C14E962385ACEF007286BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		15C14E892385ACE8007286BA /* Uol_Beer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				15C14E8A2385ACE8007286BA /* Uol_Beer.xcdatamodel */,
+			);
+			currentVersion = 15C14E8A2385ACE8007286BA /* Uol_Beer.xcdatamodel */;
+			path = Uol_Beer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 15C14E772385ACE8007286BA /* Project object */;
+}
