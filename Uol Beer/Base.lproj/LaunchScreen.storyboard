@@ -17,13 +17,55 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji-beer-png-3" translatesAutoresizingMaskIntoConstraints="NO" id="dmY-0n-wNf">
+                                <rect key="frame" x="67.5" y="207.5" width="240" height="252"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="252" id="D8l-by-fqR"/>
+                                    <constraint firstAttribute="width" constant="240" id="veb-4h-aF9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo tipo canal6TDHNLBD (1)" translatesAutoresizingMaskIntoConstraints="NO" id="UkC-6e-Yoq">
+                                <rect key="frame" x="123" y="586" width="129" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="B7l-tU-dFh"/>
+                                    <constraint firstAttribute="height" constant="61" id="F0k-4e-k9c"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQN-Ga-eiV">
+                                <rect key="frame" x="160.5" y="567" width="54" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="a2a-UJ-9CT"/>
+                                    <constraint firstAttribute="height" constant="22" id="hkC-87-SV7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="18"/>
+                                <color key="textColor" red="0.054901960784313725" green="0.49019607843137253" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.88440297759999997" blue="0.45691063650000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dmY-0n-wNf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="3Pk-Aa-p7X"/>
+                            <constraint firstItem="dmY-0n-wNf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Fdo-Ke-FF4"/>
+                            <constraint firstItem="pQN-Ga-eiV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KDp-CJ-Xpm"/>
+                            <constraint firstItem="UkC-6e-Yoq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YpP-G4-9bF"/>
+                            <constraint firstItem="UkC-6e-Yoq" firstAttribute="top" secondItem="pQN-Ga-eiV" secondAttribute="bottom" constant="-3" id="Yus-Is-E8y"/>
+                            <constraint firstItem="dmY-0n-wNf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jM8-Sp-52G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UkC-6e-Yoq" secondAttribute="bottom" constant="20" id="rrt-0d-ZtT"/>
+                            <constraint firstItem="dmY-0n-wNf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="u9L-jS-Ggz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="emoji-beer-png-3" width="2000" height="2000"/>
+        <image name="logo tipo canal6TDHNLBD (1)" width="1200" height="630"/>
+    </resources>
 </document>

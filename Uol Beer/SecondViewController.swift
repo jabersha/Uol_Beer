@@ -27,6 +27,7 @@ class SecondViewController: UIViewController {
     var abv = Double()
     var ibu = Double()
     var img = String()
+    var imgOffline: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +49,10 @@ class SecondViewController: UIViewController {
                 }
             }
             
+        } else {
+            if self.imgOffline != nil {
+                self.imgBeer.image = imgOffline
+            }
         }
         
         
