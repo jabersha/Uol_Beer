@@ -33,7 +33,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         
         nameBeer.text = name
-        descriBeer.text = descrip
+        descriBeer.text = "\"\(descrip)\""
         taglineBeer.text = tagline
         abvBeer.text = "Teor Alcóolico \n\(abv)%"
         ibuBeer.text = "Escala de amargor \n\(ibu)"

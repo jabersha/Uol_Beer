@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji-beer-png-3" translatesAutoresizingMaskIntoConstraints="NO" id="dmY-0n-wNf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerlogo" translatesAutoresizingMaskIntoConstraints="NO" id="dmY-0n-wNf">
                                 <rect key="frame" x="67.5" y="207.5" width="240" height="252"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="252" id="D8l-by-fqR"/>
@@ -65,7 +65,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="emoji-beer-png-3" width="2000" height="2000"/>
+        <image name="beerlogo" width="2000" height="2000"/>
         <image name="logo tipo canal6TDHNLBD (1)" width="1200" height="630"/>
     </resources>
 </document>

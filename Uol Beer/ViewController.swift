@@ -20,7 +20,8 @@ class ViewController:UIViewController, UITableViewDataSource, UITableViewDelegat
     var imagem:[UIImage?] = []
     var looping = 0
     var index = 0
-    var network: Bool = true
+    var firstAcess = 0
+    var network = true
     
     
     @IBOutlet weak var tableBeer: UITableView!
@@ -28,24 +29,35 @@ class ViewController:UIViewController, UITableViewDataSource, UITableViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let logo = UIImage(named: "Icon-50.png")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
+        
         monitor.start(queue: queue)
         monitor.pathUpdateHandler = { path in
             if path.status == .satisfied {
                 self.network = true
                 DispatchQueue.main.async {
-                self.deleteAllRecords()
+                    if UserDefaults.standard.bool(forKey: Keys.firstAcess){
+                        self.deleteAllRecords()
+                    }
                 }
                 self.getJson()
                 print("We're connected!")
             } else {
-                if !UserDefaults.standard.bool(forKey: Keys.firstAcess) {
-                      self.alertFirstAcessOffline()
-                    }
                 self.network = false
+                if !UserDefaults.standard.bool(forKey: Keys.firstAcess) && self.firstAcess == 0 &&  !self.network{
+                    self.firstAcess += 1
+                    self.alertFirstAcessOffline()
+                    
+                }
                 print("No connection.")
             }
             print(path.isExpensive)
         }
+        
+
+
     }
 
     
@@ -209,12 +221,13 @@ class ViewController:UIViewController, UITableViewDataSource, UITableViewDelegat
     
     
     func alertFirstAcessOffline(){
+
         let appAlert = UIAlertController(title: "Aviso", message: "Primeiro acesso necessita de conexão com a internet.", preferredStyle: .alert)
         
         appAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { (action) in
         }))
         
         self.present(appAlert, animated: true)
-    }
+  }
 }
 
